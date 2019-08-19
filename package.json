@@ -2,10 +2,13 @@
 	"name": "discord.js-commander",
 	"version": "1.0.0",
 	"description": "Make your Discord bot commands look like Bash commands",
-	"main": "discord-commander.js",
-	"types": "discord-commander.d.ts",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
 	"scripts": {
-		"start": "nodemon --exec babel-node index.js"
+		"prepublish": "babel src --out-dir lib"
+	},
+	"babel": {
+		"presets": ["es2015"]
 	},
 	"keywords": [
 		"discord.js-commander",

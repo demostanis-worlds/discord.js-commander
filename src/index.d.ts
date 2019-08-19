@@ -1,3 +1,5 @@
+import Discord from "discord.js"
+
 export as namespace DiscordCommander
 
 export interface Options {
@@ -7,7 +9,7 @@ export interface Options {
 	commandInTimeoutMessage: Function
 	vipOnlyCommandMessage: Function
 	vipOnlyOptionMessage: Function
-	disabledChannels: Discord.Collection
+	disabledChannels: Discord.Collection<Discord.Snowflake, Discord.Channel>
 	vipRole: string
 }
 
