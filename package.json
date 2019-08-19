@@ -1,18 +1,30 @@
 {
-  "name": "babel-node",
-  "version": "1.0.0",
-  "description": "Babel with Node.js",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --exec babel-node index.js"
-  },
-  "keywords": [],
-  "author": "demostanis",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "nodemon": "^1.19.1"
-  }
+	"name": "discord.js-commander",
+	"version": "1.0.0",
+	"description": "Make your Discord bot commands look like Bash commands",
+	"main": "discord-commander.js",
+	"types": "discord-commander.d.ts",
+	"scripts": {
+		"start": "nodemon --exec babel-node index.js"
+	},
+	"keywords": [
+		"discord.js-commander",
+		"discord-commander",
+		"discord.js",
+		"discord",
+		"bot"
+	],
+	"author": "demostanis",
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/node": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"nodemon": "^1.19.1"
+	},
+	"dependencies": {
+		"dotenv": "^8.0.0",
+		"parse-command": "0.0.102",
+		"tiny-timer": "^1.4.0"
+	}
 }
